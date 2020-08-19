@@ -1,0 +1,10 @@
+{
+  "modules" : { 
+    "chromenavigate"  : {
+      "description"		: "Reprend les raccourcis clavier sous Google Chrome",
+      "votre_prenom"	: "Monsieur",
+	  "Auteur"       	: "Nezumi",
+      "version"			: "1.0"
+    }
+  }
+}

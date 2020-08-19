@@ -1,0 +1,77 @@
+<grammar version="1.0" xml:lang="fr-FR" mode="voice" root="rulechromenavigate" xmlns="http://www.w3.org/2001/06/grammar" tag-format="semantics/1.0">
+  <rule id="rulechromenavigate" scope="public">
+    <example>Sarah ouvre chrome</example>
+    <tag>out.action=new Object(); </tag>
+
+    <item weight="2">Sarah</item>
+    <one-of>
+        <!-- lancement fermeture de logiciels -->
+		<item>lance chrome<tag>out.action.val="runchrome"</tag></item>
+		<item>lance google crome<tag>out.action.val="runchrome"</tag></item>
+		<item>ouvre chrome<tag>out.action.val="runchrome"</tag></item>
+		<item>ferme chrome<tag>out.action.val="closechrome"</tag></item>
+		<item>ferme google crome<tag>out.action.val="closechrome"</tag></item>
+		<item>quitte google crome<tag>out.action.val="closechrome"</tag></item>
+		
+		<item>ouvre une nouvelle fenaitre chrome<tag>out.action.val="opennewwindows"</tag></item>
+		<item>ouvre une navigation privé<tag>out.action.val="privatenav"</tag></item>
+
+		<item>ferme l'ongler<tag>out.action.val="ongletclose"</tag></item>
+		<item>ferme l'onglet<tag>out.action.val="ongletclose"</tag></item>
+		<item>réouvre l'onglet fermé<tag>out.action.val="ongletclosereopen"</tag></item>
+		<item>ouvre l'onglet fermé<tag>out.action.val="ongletclosereopen"</tag></item>
+		<item>ouvre les téléchargements<tag>out.action.val="ongletdownload"</tag></item>
+		<item>ouvre l'historique<tag>out.action.val="onglethistory"</tag></item>
+		<item>ouvre un nouvel onglet<tag>out.action.val="ongletnew"</tag></item>
+		<item>onglet suivant<tag>out.action.val="ongletnext"</tag></item>
+		<item>onglet précédent<tag>out.action.val="ongletprevious"</tag></item>
+		<item>raffraichir l'onglet<tag>out.action.val="ongletrefresh"</tag></item>
+		<item>enregistrer l'onglet en favori<tag>out.action.val="ongletsavefavori"</tag></item>
+		<item>mettre l'onglet en favori<tag>out.action.val="ongletsavefavori"</tag></item>
+		<item>ouvre la barre de recherche<tag>out.action.val="ongletsearch"</tag></item>
+		
+		<item>onglet un<tag>out.action.val="onglet1"</tag></item>
+		<item>affiche onglet un<tag>out.action.val="onglet1"</tag></item>
+		<item>premier onglet<tag>out.action.val="onglet1"</tag></item>
+		<item>affiche le premier onglet<tag>out.action.val="onglet1"</tag></item>
+		
+		<item>onglet deux<tag>out.action.val="onglet2"</tag></item>
+		<item>affiche onglet deux<tag>out.action.val="onglet2"</tag></item>
+		<item>deuxième onglet<tag>out.action.val="onglet2"</tag></item>
+		<item>affiche le deuxième onglet<tag>out.action.val="onglet2"</tag></item>
+		
+		<item>onglet trois<tag>out.action.val="onglet3"</tag></item>
+		<item>affiche onglet trois<tag>out.action.val="onglet3"</tag></item>
+		<item>troisième onglet<tag>out.action.val="onglet3"</tag></item>
+		<item>affiche le troisième onglet<tag>out.action.val="onglet3"</tag></item>
+		
+		<item>onglet quatre<tag>out.action.val="onglet4"</tag></item>
+		<item>affiche onglet quatre<tag>out.action.val="onglet4"</tag></item>
+		<item>quatrième onglet<tag>out.action.val="onglet4"</tag></item>
+		<item>affiche le quatrième onglet<tag>out.action.val="onglet4"</tag></item>
+		
+		<item>onglet cinq<tag>out.action.val="onglet5"</tag></item>
+		<item>affiche onglet cinq<tag>out.action.val="onglet5"</tag></item>
+		<item>cinquième onglet<tag>out.action.val="onglet5"</tag></item>
+		<item>affiche le cinquième onglet<tag>out.action.val="onglet5"</tag></item>
+
+		<item>onglet six<tag>out.action.val="onglet6"</tag></item>
+		<item>affiche onglet six<tag>out.action.val="onglet6"</tag></item>
+		<item>sixième onglet<tag>out.action.val="onglet6"</tag></item>
+		<item>affiche le sixième onglet<tag>out.action.val="onglet6"</tag></item>
+		
+		<item>onglet sept<tag>out.action.val="onglet7"</tag></item>
+		<item>affiche onglet sept<tag>out.action.val="onglet7"</tag></item>
+		<item>septième onglet<tag>out.action.val="onglet7"</tag></item>
+		<item>affiche le septième onglet<tag>out.action.val="onglet7"</tag></item>
+		
+		<item>onglet huit<tag>out.action.val="onglet8"</tag></item>
+		<item>affiche onglet huit<tag>out.action.val="onglet8"</tag></item>
+		<item>huitième onglet<tag>out.action.val="onglet8"</tag></item>
+		<item>affiche le huitième onglet<tag>out.action.val="onglet8"</tag></item>
+		
+    </one-of>
+    
+    <tag>out.action._attributes.uri="http://127.0.0.1:8080/sarah/chromenavigate";</tag>
+  </rule>
+</grammar>

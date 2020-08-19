@@ -43,5 +43,4 @@ Plugin pour SARAH permettant de naviguer entre les onglets de google chrome
 			Txt[3] = "phrase 4";</br>
 			<br/>			
 			<b>Sarah exécutera alors le fichier .vbs que pointeras le fichier .js, et simuleras les raccourcis clavier correspondant à l'action demandé.</b></br>
-			
-      		</p>
+</p>
